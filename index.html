@@ -37,8 +37,11 @@
 
                 <!-- Password -->
                  <div>
-                    <label for="password">Mot de pass (8 charactaires minimum) :</label>
-                    <input type="text" name="password" placeholder=" 🔒 Tapez votre mot de passe" id="password" minlength="8" required>
+                    <div class="show">
+                        <label for="password">Mot de pass (8 charactaires minimum) :</label>
+                        <button type="button" onclick="togglePassword()">👁️</button>
+                    </div>
+                    <input type="password" name="password" placeholder=" 🔒 Tapez votre mot de passe" id="password" minlength="8" required>
                     <a href=""><p class="left">Mot de passe oublié ?</p></a>
                  </div>
             </div>
@@ -73,5 +76,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

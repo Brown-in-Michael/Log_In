@@ -78,6 +78,16 @@ h2{
             margin-top: 5px;
             color: var(--text-color);
         }
+        div{
+            display: flex;
+        flex-direction: row;
+        button{
+            width: 50px;
+            margin-left: 63px;
+            background-color: transparent;
+            border: none;
+        }
+        }
     }
 }
 /* Style password left */
