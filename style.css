@@ -1,0 +1,151 @@
+/* Style Settings */
+*{
+    margin: 0;
+    font-style: normal;
+    font-family: "Nunito", sans-serif;
+}
+:root{
+    --background-color-card: #fff0f3;
+    --button-color:#aa73ad;
+    --button-hover:#2A2A2A;
+    --text-color: #212529;
+    --text-hover-color:var(--background-color-card);
+}
+body{
+    background-image: url(Assets/background.png);
+}
+/* Navigation styles */
+nav{
+    padding: 10px;
+    background-color: var(--background-color-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        margin-right: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    a{
+        text-decoration: none;
+    }
+    span{
+       font-size: 30px;
+    }
+}
+/* Login Card Syles */
+section{
+    display: flex;
+    justify-content: center;
+    .loginCard{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px;
+    padding: 0px 40px;
+    background-color: var(--background-color-card);
+    border-radius: 15px;
+    width: 400px;
+    height: 650px;
+}
+}
+/* Title styles */
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+}
+/* Inputs styles */
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        input{
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 5px 2px 1px #0000000f;
+            height: 30px;
+        }
+        a{
+            color: var(--text-color);
+        }
+    }
+}
+/* Style password left */
+.left{
+    text-align: end;
+}
+/* Checkbox */
+.checkbox{
+    margin: 20px 0px;
+}
+/* Submit Login and Hover */
+#login{
+    background-color: var(--button-color);
+    font-weight: 600 ;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    color: var(--background-color-card);
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+}
+#login:hover{
+    color: var(--text-hover-color);
+    background-color: var(--button-hover);
+    transition: ease-in-out 0.3s;
+}
+/* Else styles */
+.loginElse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 10px;
+    p{
+        opacity: 60%;
+    }
+    a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--button-color);
+    border-radius: 50%;
+    color: var(--button-color);
+    margin: 15px 5px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    }
+    a:hover{
+        transition: 0.3s ease-in-out;
+        background-color: #aa73ad;
+        color: var(--background-color-card);
+    }
+}
+/* Create account styles */
+.createAccount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 30px 0px;
+    p{
+        opacity: 60%;
+    }
+    a{
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
