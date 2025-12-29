@@ -82,10 +82,22 @@ h2{
             display: flex;
         flex-direction: row;
         button{
-            width: 50px;
-            margin-left: 63px;
+            width: 30px;
+            margin-left: 65px;
             background-color: transparent;
             border: none;
+            img{
+                width: 35px;
+                height: 22px;
+                transition: ease-in-out 0.3s;
+            }
+            img:active{
+                content: url(Assets/closed.png);
+                width: 35px;
+                height: 22px;
+                cursor: pointer;
+                transition: ease-in-out 0.3s;
+            }
         }
         }
     }
