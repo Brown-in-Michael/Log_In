@@ -74,6 +74,7 @@ h2{
             height: 30px;
         }
         a{
+            margin-top: 5px;
             color: var(--text-color);
         }
     }
