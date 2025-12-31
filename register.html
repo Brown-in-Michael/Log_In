@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <img src="Assets/logo.png" alt="Logo">
+
+            <!-- Account Icon and Settings-->
+            <div>
+                <a href="index.html" class="alreadyAccount"><span alt="Profile">Déja un compte?</span></a>
+                <a href=""><span alt="Settings">⚙️</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Register Card -->
+        <div class="registerCard">
+            <div class="registerTitles">
+                <h2>Créer votre compte</h2>
+                <p>C'est simple et rapide.</p>
+            </div>
+            <form>
+                <!-- Name -->
+                <div class="names">
+                    <input type="text" placeholder=" Prénom" required>
+                    <input type="text" placeholder=" Nom de famille" required>
+                </div>
+                <!-- Date of birth -->
+                <div class="birth">
+                    <p>Date de naissance <span>❔</span></p>
+                    <div>
+                        <input type="number" name="day" placeholder=" JJ" min="1" max="31" required>
+                        <input type="number" name="month" placeholder=" MM" min="1" max="12" required>
+                        <input type="number" name="year" placeholder=" AAAA" min="1900" max="2025" required>
+                    </div>
+                </div>
+                <!-- Gender -->
+                <div id="gender">
+                    <p>Genre <span>❔</span></p>
+                    <div class="flexCheckbox">
+                        <!-- Woman -->
+                        <div>
+                            <label for="woman">Femme</label>
+                            <input type="checkbox" name="woman" id="woman">
+                        </div>
+                        <!-- Man -->
+                        <div>
+                            <label for="man">Homme</label>
+                            <input type="checkbox" name="man" id="man">
+                        </div>
+                        <!-- Personnalisé -->
+                        <div>
+                            <label for="peronalise">Personnalisé</label>
+                            <input type="checkbox" name="peronalise" id="peronalise">
+                        </div>
+                    </div>
+                </div>
+                <!-- Create a username -->
+                <div class="userPassword">
+                    <input type="text" name="username" id="username" placeholder=" Nouveau Idantifiant" required>
+                    <input type="text" name="password" id="password" placeholder=" Nouveau mot de passe" required>
+                </div>
+                <div class="termsConditions">
+                    <p>Les personnes qui utilisent notre service ont pu importer vos coordonées sur Axezzel. <a href="">En savoir plus.</a></p>
+                    <p>En cliquant sur "S'inscrire", vous acceptez nos <a href="">Conditions générales</a> notre <a href="">Politique de confidentialité</a> et notre <a href="">Politique d'utilisation des cookies</a>. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.</p>
+                </div>
+                <div class="btnCreateAccount">
+                    <input type="submit" value="S'inscrire" href="index.html">
+                    <a href="index.html">Vous avez déja un compte?</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
